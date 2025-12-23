@@ -1,0 +1,12 @@
+name: heart-failure-env
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+    - pandas
+    - matplotlib
+    - seaborn
+    - mlflow
+    - scikit-learn
