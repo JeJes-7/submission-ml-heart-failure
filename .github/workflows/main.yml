@@ -33,7 +33,7 @@ jobs:
       run: echo "MLFLOW_TRACKING_URI=sqlite:///mlflow.db" >> $GITHUB_ENV
       
     - name: Run mlflow project
-      run: mlflow run . --no-conda
+      run: python modelling_tunning.py
 
     - name: Install Python dependencies
       run: echo "Dependencies verified."
