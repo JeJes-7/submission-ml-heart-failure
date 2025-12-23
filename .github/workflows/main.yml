@@ -16,11 +16,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    # Menyiapkan Python versi 3.9
-    - name: Set up Python 3.9
+    # Menyiapkan Python versi 3.12
+    - name: Set up Python 3.12
       uses: actions/setup-python@v4
       with:
-        python-version: '3.9'
+        python-version: '3.12'
 
     # Menginstall library yang dibutuhkan
     - name: Install dependencies
