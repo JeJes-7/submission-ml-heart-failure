@@ -1,0 +1,22 @@
+artifact_path: file:C:/xampp/htdocs/Eksperimen_SML_Jesika-Yudiani-Putri/Membangun_model/mlruns/1/models/m-774d7811325f44a48c938c50de1a1236/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+mlflow_version: 3.8.0
+model_id: m-774d7811325f44a48c938c50de1a1236
+model_size_bytes: 524215
+model_uuid: m-774d7811325f44a48c938c50de1a1236
+prompts: null
+run_id: f6ac3c0e5ff54823bec80e68fd8ec14d
+utc_time_created: '2025-12-23 03:01:38.815457'
