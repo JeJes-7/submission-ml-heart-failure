@@ -1,0 +1,33 @@
+name: Heart Failure Training Pipeline
+
+# Workflow jalan saat ada push ke branch main
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-run-training:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Mengambil kode dari repository
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Menyiapkan Python versi 3.9
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    # Menginstall library yang dibutuhkan
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    # Menjalankan script training
+    - name: Execute Model Training
+      run: python modelling_tuning.py
