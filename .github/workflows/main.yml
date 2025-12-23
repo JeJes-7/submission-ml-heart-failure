@@ -42,4 +42,8 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: model-output
-        path: .
+        path: |
+          *.png
+          mlflow.db
+          modelling_tuning.py
+          requirements.txt
